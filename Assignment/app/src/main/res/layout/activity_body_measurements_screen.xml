@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.assignment.bodyMeasurementsScreen">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/screenMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:text="Please enter your body details"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/heightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/screenMessage"
+            android:layout_alignStart="@+id/screenMessage"
+            android:layout_below="@+id/screenMessage"
+            android:layout_marginTop="56dp"
+            android:layout_toLeftOf="@+id/HeightEditText"
+            android:layout_toStartOf="@+id/HeightEditText"
+            android:text="Height:"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/HeightEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/heightText"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:ems="10"
+            android:hint="109"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/cmH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/HeightEditText"
+            android:layout_alignBottom="@+id/HeightEditText"
+            android:layout_alignEnd="@+id/HeightEditText"
+            android:layout_alignRight="@+id/HeightEditText"
+            android:text="cm"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/heightText"
+            android:layout_alignStart="@+id/heightText"
+            android:layout_below="@+id/HeightEditText"
+            android:layout_marginTop="49dp"
+            android:layout_toLeftOf="@+id/HeightEditText"
+            android:text="Weight:"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/weightText"
+            android:layout_toEndOf="@+id/weightText"
+            android:layout_toRightOf="@+id/weightText"
+            android:ems="10"
+            android:hint="90"
+            android:inputType="number"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/KgW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/weightText"
+            android:layout_alignEnd="@+id/weightEditText"
+            android:layout_alignRight="@+id/weightEditText"
+            android:text="Kg"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/AgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/ageEditText"
+            android:layout_alignBottom="@+id/ageEditText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ageEditText" />
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="19"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/weightEditText"
+            android:layout_alignLeft="@+id/weightEditText"
+            android:layout_alignStart="@+id/weightEditText"
+            android:layout_marginTop="43dp" />
+
+        <Button
+            android:id="@+id/enterBodyMeasurementsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/holo_blue_dark"
+            android:elevation="0dp"
+            android:onClick="enterMeasurementsClicked"
+            android:text="Enter Measurements"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

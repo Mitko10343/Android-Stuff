@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.assignment.searchCustRow">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <TextView
+            android:id="@+id/FoodName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:text="TextView"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <TextView
+            android:id="@+id/Calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6"
+            android:layout_toRightOf="@+id/textView6"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/AddButton"
+            android:layout_alignLeft="@+id/FoodName"
+            android:layout_alignStart="@+id/FoodName"
+            android:text="Kcal:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ServingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Calories"
+            android:layout_alignBottom="@+id/Calories"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/Calories"
+            android:layout_toRightOf="@+id/Calories"
+            android:text="Serving Size:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ServingSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ServingText"
+            android:layout_alignBottom="@+id/ServingText"
+            android:layout_toEndOf="@+id/ServingText"
+            android:layout_toRightOf="@+id/ServingText"
+            android:text="100" />
+
+        <Button
+            android:id="@+id/AddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/FoodName"
+            android:background="@android:color/holo_blue_dark"
+            android:elevation="10dp"
+            android:onClick="addFoodClicked"
+            android:text="Add Food"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <TextView
+            android:id="@+id/Grams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ServingSize"
+            android:layout_alignBottom="@+id/ServingSize"
+            android:layout_toEndOf="@+id/ServingSize"
+            android:layout_toRightOf="@+id/ServingSize"
+            android:text="g"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/FoodName"
+            android:layout_toEndOf="@+id/Grams"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
